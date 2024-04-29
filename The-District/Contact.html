@@ -16,21 +16,22 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid ">
         <img src="images_the_district/the_district_brand/logo_transparent.png" alt="logo" width="10%">
-        <a class="navbar-brand text-white " href="Acceuil.html">Acceuil</a>
+        <a class="navbar-brand text-white " href="Contact.html">Contact  </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
+              <a class="nav-link text-white" href="Acceuil.html">Acceuil</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active text-white" aria-current="page" href="Catégories.html">Catégories</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="Tous les plats.html">Tout les Plats</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
-            </li>
+           
             <li class="nav-item">
               <a href="commande.html">
                 <img  src="images_the_district/basket2.svg" class="rounded-pill  p-1 " style=" background-color: white;width: 35px;height: 35px;display: flex;align-items: center;justify-content: center;">
@@ -47,13 +48,22 @@
     <!-- image d efond  -->
 
 
-    <div class="card">
+   <!--  <div class="card">
       <img src="images_the_district/sushi.gif" class="card-img img-fluid" alt="image de fond"
           style="width: 100%; height: 400px;  ">
       <div class="card-img-overlay" style="display: flex; align-items: center; justify-content: center;">
-         <!--  <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search" style="width: 25%;"> -->
+         
       </div>
-  </div>
+  </div> -->
+
+  <div class="container-fluid g-0 " style="width: 100%;">
+    <div class="card" style="border-color:black;">
+ <video class="embed-responsive-item" autoplay muted loop style="width: 100%; height: 400px; margin: 0 auto; object-fit: fill;">
+     <source src="images_the_district/contact.mp4" type="video/mp4">
+ </video>
+ 
+</div>
+</div>
 
 
 
@@ -68,40 +78,43 @@
 <br>
 
 
-<form id="contactForm" class="row g-3 needs-validation">
-  <div class="col-md-6">
-    <label for="validationTooltip01" class="form-label text-white" id="prenom">Prénom</label>
-    <input type="text" class="form-control" id="validationTooltip01">
-  </div>
-  <div class="col-md-6">
-    <label for="validationTooltip02" class="form-label text-white" id="nom">Nom</label>
-    <input type="text" class="form-control" id="validationTooltip02">
-  </div>
-  <div class="col-md-6">
-    <label for="validationTooltip03" class="form-label text-white" id="email">E-mail</label>
-    <input type="text" class="form-control" id="validationTooltip03">
-  </div>
-  <div class="col-md-6">
-    <label for="validationTooltip04" id="telephone" class="form-label text-white">Téléphone</label>
-    <input type="tel" class="form-control" id="validationTooltip04" > <!-- pattern="[0-9]{10}" title="Veuillez entrer un numéro de téléphone valide (10 chiffres)." -->
-  </div>
-  <div class="col-12">
-    <label for="question"  id="question" class="form-label text-white">Votre Question</label>
-    <textarea class="form-control"></textarea>
-  </div>
-  <div class="container">
+<!-- Formulaire de contact -->
 
-    <div class="btn-group" role="group" aria-label="Un groupe de boutons">
-
-      <input class="btn btn-primary me-2" type="submit" value="Envoyer">
-
-    
-
+<div class="bg-color">
+  <br>
+  <form id="contactForm" class="row g-3 needs-validation">
+    <div class="col-md-6">
+      <label for="validationTooltip01" class="form-label text-white" id="prenom">Prénom</label>
+      <input type="text" class="form-control" id="validationTooltip01">
+      <div class="error-message" id="prenom-error"></div>
     </div>
-
-  </div>
-
-</form>
+    <div class="col-md-6">
+      <label for="validationTooltip02" class="form-label text-white" id="nom">Nom</label>
+      <input type="text" class="form-control" id="validationTooltip02">
+      <div class="error-message" id="nom-error"></div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationTooltip03" class="form-label text-white" id="email">E-mail</label>
+      <input type="text" class="form-control" id="validationTooltip03">
+      <div class="error-message" id="email-error"></div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationTooltip04" id="telephone" class="form-label text-white">Téléphone</label>
+      <input type="tel" class="form-control" id="validationTooltip04">
+      <div class="error-message" id="telephone-error"></div>
+    </div>
+    <div class="col-12">
+      <label for="question" id="question" class="form-label text-white">Votre Question</label>
+      <textarea class="form-control"></textarea>
+      <div class="error-message" id="question-error"></div>
+    </div>
+    <div class="container">
+      <div class="btn-group" role="group" aria-label="Un groupe de boutons">
+        <input class="btn btn-primary me-2" type="submit" value="Envoyer">
+      </div>
+    </div>
+  </form>
+</div>
 
 
  
