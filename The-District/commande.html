@@ -11,20 +11,21 @@
 
 <body>
 
+  <div class="container-fluid g-0" >
+    <div class="parallax">
+  
     <!-- Enetete avec liens vers les autres pages -->
     <header>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid ">
         <img src="images_the_district/the_district_brand/logo_transparent.png" alt="logo" width="10%">
-        <a class="navbar-brand text-white " href="commande.html">Commande </a>
+        <a class="navbar-brand text-white " href="Acceuil.html">Acceuil</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="Acceuil.html">Acceuil</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link active text-white" aria-current="page" href="Catégories.html">Catégories</a>
             </li>
@@ -34,7 +35,11 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="Contact.html">Contact</a>
             </li>
-           
+            <li class="nav-item">
+              <a href="commande.html">
+                <img  src="images_the_district/basket2.svg" class="rounded-pill  p-1 " style=" background-color: white;width: 35px;height: 35px;display: flex;align-items: center;justify-content: center;">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -47,7 +52,7 @@
 
 
     <div class="container-fluid g-0 " style="width: 100%;">
-      <div class="card" style="border-color:black;">
+      <div class="card no-hover" style="border-color:black;">
    <video class="embed-responsive-item" autoplay muted loop style="width: 100%; height: 300px; margin: 0 auto; object-fit: fill;">
        <source src="images_the_district/livraison.mp4" type="video/mp4">
    </video>
@@ -66,70 +71,42 @@
 
 
   <!-- couleur arrière plan -->
-<div class="bg-color">
+<!-- <div class="bg-color"> -->
 <br>
 
 
 <!-- card de la commande -->
-<div class="container-fluid d-flex" style="justify-content: center;">
-<div class="card mb-3 text-center" style="max-width: 540px; background-color: rgb(211, 75, 57);">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="images_the_district/image-perso-1.jpeg" class="img-fluid rounded-5 border border-secondary" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Plats commandé</h5>
-        <p class="card-text">Description du plat commandé.</p>
 
-        <label for="tentacles">Quantité</label>
-        <input type="number" style="width: 15%;" id="tentacles" name="tentacles" min="0" max="100" />
+
+
+<div class="container-fluid d-flex" style="justify-content: center;">
+  <div class="card mb-3 text-center no-hover" style="max-width: 540px; background-color: rgb(133, 118, 126);">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images_the_district/image-perso-1.jpeg" class="img-fluid rounded-5 border border-secondary" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Plats commandé</h5>
+          <p class="card-text">Description du plat commandé.</p>
+
+          <div class="input-group" style="justify-content: center;">
+            <label for="tentacles-value">Quantité : &nbsp;</label>
+            <button class="btn btn-secondary btn-sm" id="minus" type="button">-</button>
+            <input type="text" style="width: 10%;" id="tentacles-display" value="00" min="0" max="100" readonly />
+            <button class="btn btn-secondary btn-sm" id="plus" type="button">+</button>
+            <input type="hidden" id="tentacles-value" name="tentacles" min="0" max="100" value="0" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 
 <!-- Formulaire de commande -->
 
-<!-- <form id="DeliveryForm" class="row g-3 needs-validation mx-5 p-5">
 
-
-  <div class="container">
-    <div class="col-md-12">
-      <label for="numero1" class="form-label text-white"  id="NomPrenom">Nom et Prénom</label>
-      <input type="text"  class="form-control" id="numero1">
-      <div class="error-message" id="NomPrenom-error"></div>
-    </div>
-  </div>
-
-
-  <div class="col-md-6">
-    <label for="numero2" class="form-label text-white" id="contact">E-mail</label>
-    <input type="text" class="form-control" id="numero2">
-    <div class="error-message" id="contact-error"></div>
-  </div>
-  <div class="col-md-6 ">
-    <label for="numero4" id="phone" class="form-label text-white">Téléphone</label>
-    <input type="tel" class="form-control" id="numero4">
-    <div class="error-message" id="phone-error"></div>
-  </div>
-  <div class="col-12">
-    <label for="adresse" id="adresse" class="form-label text-white">Votre Adresse</label>
-    <textarea class="form-control"></textarea>
-    <div class="error-message" id="adresse-error"></div>
-  </div>
-  <br>
-  <div class="container text-end">
-    <div class="btn-group " role="group" aria-label="Un groupe de boutons">
-      <input class="btn btn-primary me-2" type="submit" value="Envoyer">
-    </div>
-  </div>
-</form>  -->
-
-
-<!-- deliveryForm.html -->
 
 <form id="DeliveryForm" class="row g-3 needs-validation mx-5 p-5">
 
@@ -152,7 +129,7 @@
     <div class="error-message" id="phone-error"></div>
   </div>
   <div class="col-12">
-    <label for="adresse" id="adresse" class="form-label text-white">Votre Adresse</label>
+    <label for="adresse" id="Test" class="form-label text-white">Votre Adresse</label>
     <textarea id="adresse" name="adresse" class="form-control"></textarea>
     <div class="error-message" id="adresse-error"></div>
   </div>
@@ -167,6 +144,7 @@
 
  
     <!-- Réseaux sociaux -->    
+
         <footer>
 <div class="container d-flex justify-content-center">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 " >
@@ -215,9 +193,12 @@
   
   
       <!-- c'est la div du backrground -->
-  </div>
+ <!--  </div> -->
 </footer>
-          <script src="../Commande.js"></script>
+
+    </div>
+  </div>
+          <script src="Commande.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
   
