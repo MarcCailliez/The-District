@@ -38,13 +38,13 @@
 
 
 
-<form id="DeliveryForm" class="row g-3 needs-validation mx-5 p-5">
+<form id="aDeliveryForm" class="row g-3 needs-validation mx-5 p-5" onsubmit="event.preventDefault(); validateDeliveryForm();">
 
   <div class="container">
     <div class="col-md-12">
-      <label for="numero1" class="form-label text-white" id="NomPrenom">Nom et Prénom</label>
-      <input type="text" id="numero1" name="nom_prenom" class="form-control">
-      <div class="error-message" id="NomPrenom-error"></div>
+      <label for="numero1" class="form-label text-white" id="jinx">Nom et Prénom</label>
+      <input type="text" id="numero1" name="jinx" class="form-control">
+      <div class="error-message" id="jinx-error"></div>
     </div>
   </div>
 

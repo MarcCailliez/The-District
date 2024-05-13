@@ -16,7 +16,7 @@
   <br>
 
 
- <form id="contactForm" class="row g-3 needs-validation mx-5 p-5">
+ <form id="contactForm" class="row g-3 needs-validation mx-5 p-5" onsubmit="event.preventDefault(); validateContactForm();">
     <div class="col-md-6">
       <label for="validationTooltip01" class="form-label text-white" id="prenom">Prénom</label>
       <input type="text" class="form-control " id="validationTooltip01">

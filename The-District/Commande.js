@@ -34,18 +34,18 @@ const form = document.getElementById('DeliveryForm');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const nomPrenom = document.getElementById('numero1').value;
+  const jinx = document.getElementById('numero1').value;
   const contact = document.getElementById('numero2').value;
   const phone = document.getElementById('numero4').value;
   const adresse = document.getElementById('adresse').value;
 
   let errors = [];
 
-  if (nomPrenom === '') {
+  if (jinx === '') {
     errors.push('Le champ "Nom et Prénom" est obligatoire');
-    document.getElementById('NomPrenom-error').innerHTML = '<span style="color: red;">Le champ "Nom et Prénom" est obligatoire</span>';
+    document.getElementById('jinx-error').innerHTML = '<span style="color: red;">Le champ "Nom et Prénom" est obligatoire</span>';
   } else {
-    document.getElementById('NomPrenom-error').innerHTML = '';
+    document.getElementById('jinx-error').innerHTML = '';
   }
 
   if (!validateEmail(contact)) {

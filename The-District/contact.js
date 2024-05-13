@@ -1,77 +1,163 @@
-/* Vérifcation formulaire contact */
 
-const form = document.getElementById('contactForm');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+// Validation du formulaire contactForm
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-  
-  const prenom = document.getElementById('validationTooltip01').value.trim();
-  const nom = document.getElementById('validationTooltip02').value.trim();
-  const email = document.getElementById('validationTooltip03').value.trim();
-  const telephone = document.getElementById('validationTooltip04').value.trim();
-  const question = document.querySelector('textarea').value.trim();
- 
+  // Nettoyer les messages d'erreur précédents
+  document.getElementById('prenom-error').textContent = '';
+  document.getElementById('nom-error').textContent= '';
+  document.getElementById('email-error').textContent = '';
+  document.getElementById('telephone-error').textContent = '';
+  document.getElementById('question-error').textContent = '';
 
-  let erreur = false;
+  let isFormValid = true;
 
-  // Vérification du prénom
-  if (prenom === '') {
-    document.getElementById('prenom-error').innerHTML = 'Veuillez entrer votre prénom';
-    document.getElementById('prenom-error').style.color = 'red';
-    erreur = true;
-  } else {
-    document.getElementById('prenom-error').innerHTML = '';
+  // Vérifier le champ Prénom
+  let prenom = document.getElementById('validationTooltip01');
+  if (!prenom.value.trim()) {
+    document.getElementById('prenom-error').textContent = 'Veuillez entrer votre prénom.';
+    isFormValid = false;
   }
 
-  // Vérification du nom
-  if (nom === '') {
-    document.getElementById('nom-error').innerHTML = 'Veuillez entrer votre nom';
-    document.getElementById('nom-error').style.color = 'red';
-    erreur = true;
-  } else {
-    document.getElementById('nom-error').innerHTML = '';
+  // Vérifier le champ Nom
+  let nom = document.getElementById('validationTooltip02');
+  if (!nom.value.trim()) {
+    document.getElementById('nom-error').textContent = 'Veuillez entrer votre nom.';
+    isFormValid = false;
   }
 
-  // Vérification de l'email
-  if (email === '') {
-    document.getElementById('email-error').innerHTML = 'Veuillez entrer votre adresse e-mail';
-    document.getElementById('email-error').style.color = 'red';
-    erreur = true;
-  } else if (!email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
-    document.getElementById('email-error').innerHTML = 'Veuillez entrer une adresse e-mail valide';
-    document.getElementById('email-error').style.color = 'red';
-    erreur = true;
-  } else {
-    document.getElementById('email-error').innerHTML = '';
+  // Vérifier le champ E-mail
+  let email = document.getElementById('validationTooltip03');
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailRegex.test(email.value)) {
+    document.getElementById('email-error').textContent = 'Veuillez entrer un e-mail valide.';
+    isFormValid = false;
   }
 
-  // Vérification du téléphone
-  if (telephone === '') {
-    document.getElementById('telephone-error').innerHTML = 'Veuillez entrer votre numéro de téléphone';
-    document.getElementById('telephone-error').style.color = 'red';
-    erreur = true;
-  } else if (!telephone.match(/^[0-9]{10}$/)) {
-    document.getElementById('telephone-error').innerHTML = 'Veuillez entrer un numéro de téléphone valide (10 chiffres)';
-    document.getElementById('telephone-error').style.color = 'red';
-    erreur = true;
-  } else {
-    document.getElementById('telephone-error').innerHTML = '';
+  // Vérifier le champ Téléphone
+  let telephone = document.getElementById('validationTooltip04');
+  const telephoneRegex = /^\d{10}$/; // Téléphone à 10 chiffres
+  if (!telephoneRegex.test(telephone.value)) {
+    document.getElementById('telephone-error').textContent = 'Veuillez entrer un numéro de téléphone valide (10 chiffres).';
+    isFormValid = false;
   }
 
-   // Vérification de la question
-   if (question === '') {
-    document.getElementById('question-error').innerHTML = 'Veuillez entrer votre question';
-    document.getElementById('question-error').style.color = 'red';
-    erreur = true;
-  } else {
-    document.getElementById('question-error').innerHTML = '';
+  // Vérifier le champ Question
+  let question = document.querySelector('#contactForm textarea');
+  if (!question.value.trim()) {
+    document.getElementById('question-error').textContent = 'Veuillez entrer votre question.';
+    isFormValid = false;
   }
 
-  if (!erreur) {
-    // Si tout est valide, on peut envoyer le formulaire
-    alert("Le formulaire a bien été envoyé !");
-    form.submit();
+  // Si le formulaire est valide, envoyer les données
+  if (isFormValid) {
+    // Envoyer les données du formulaire ici
+    console.log('Formulaire contactForm envoyé:', {
+      prenom: prenom.value,
+      nom: nom.value,
+      email: email.value,
+      telephone: telephone.value,
+      question: question.value
+    });
   }
 });
 
+// Ajouter un écouteur d'événement pour vérifier les champs lors de la modification
+document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(function(field) {
+  field.addEventListener('input', function() {
+    if (field.id === 'validationTooltip01') {
+      document.getElementById('prenom-error').textContent = '';
+    } else if (field.id === 'validationTooltip02') {
+      document.getElementById('nom-error').textContent = '';
+    } else if (field.id === 'validationTooltip03') {
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (emailRegex.test(field.value)) {
+        document.getElementById('email-error').textContent = '';
+      }
+    } else if (field.id === 'validationTooltip04') {
+      const telephoneRegex = /^\d{10}$/;
+      if (telephoneRegex.test(field.value)) {
+        document.getElementById('telephone-error').textContent = '';
+      }
+    } else if (field.id === 'question') {
+      document.getElementById('question-error').textContent = '';
+    }
+  });
+});
+
+
+// Validation du formulaire aDeliveryForm
+document.getElementById('aDeliveryForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Nettoyer les messages d'erreur précédents
+  document.getElementById('jinx-error').textContent = '';
+  document.getElementById('contact-error').textContent = '';
+  document.getElementById('phone-error').textContent = '';
+  document.getElementById('adresse-error').textContent = '';
+
+  let isFormValid = true;
+
+  // Vérifier le champ Nom et Prénom
+  let nomPrenom = document.getElementById('numero1');
+  if (!nomPrenom.value.trim()) {
+    document.getElementById('jinx-error').textContent = 'Veuillez entrer votre nom et prénom.';
+    isFormValid = false;
+  }
+
+  // Vérifier le champ E-mail
+  let email = document.getElementById('numero2');
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailRegex.test(email.value)) {
+    document.getElementById('contact-error').textContent = 'Veuillez entrer un e-mail valide.';
+    isFormValid = false;
+  }
+
+  // Vérifier le champ Téléphone
+  let telephone = document.getElementById('numero4');
+  const telephoneRegex = /^\d{10}$/; // Téléphone à 10 chiffres
+  if (!telephoneRegex.test(telephone.value)) {
+    document.getElementById('phone-error').textContent = 'Veuillez entrer un numéro de téléphone valide (10 chiffres).';
+    isFormValid = false;
+  }
+
+  // Vérifier le champ Adresse
+  let adresse = document.getElementById('adresse');
+  if (!adresse.value.trim()) {
+    document.getElementById('adresse-error').textContent = 'Veuillez entrer votre adresse.';
+    isFormValid = false;
+  }
+
+  // Si le formulaire est valide, envoyer les données
+  if (isFormValid) {
+    // Envoyer les données du formulaire ici
+    console.log('Formulaire aDeliveryForm envoyé:', {
+      nomPrenom: nomPrenom.value,
+      email: email.value,
+      telephone: telephone.value,
+      adresse: adresse.value
+    });
+  }
+});
+
+// Ajouter un écouteur d'événement pour vérifier les champs lors de la modification
+document.querySelectorAll('#aDeliveryForm input, #DeliveryForm textarea').forEach(function(field) {
+  field.addEventListener('input', function() {
+    if (field.id === 'numero1') {
+      document.getElementById('jinx-error').textContent = '';
+    } else if (field.id === 'numero2') {
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (emailRegex.test(field.value)) {
+        document.getElementById('contact-error').textContent = '';
+      }
+    } else if (field.id === 'numero4') {
+      const telephoneRegex = /^\d{10}$/;
+      if (telephoneRegex.test(field.value)) {
+        document.getElementById('phone-error').textContent = '';
+      }
+    } else if (field.id === 'adresse') {
+      document.getElementById('adresse-error').textContent = '';
+    }
+  });
+});
