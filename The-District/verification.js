@@ -55,6 +55,7 @@ function validateContactForm() {
   
     // Si aucune erreur, soumettre le formulaire
     if (!prenomError && !nomError && !emailError && !telephoneError && !questionError) {
+      alert("Votre formulaire a bien été envoyé !");
       document.getElementById("contactForm").submit();
     }
   }
@@ -106,6 +107,7 @@ function validateContactForm() {
   
     // Si aucune erreur, soumettre le formulaire
     if (!jinxError && !contactError && !phoneError && !adresseError) {
+      alert("Votre formulaire a bien été envoyé !");
       document.getElementById("aDeliveryForm").submit();
     }
   }
