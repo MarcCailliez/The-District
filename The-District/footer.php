@@ -2,7 +2,7 @@
 <footer>
   
 <div class="container d-flex justify-content-center">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 " >
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 mb-2" >
     <div class="col d-none d-lg-block">
     
             <a href="#" >
