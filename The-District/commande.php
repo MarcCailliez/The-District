@@ -9,6 +9,16 @@
 
 
 
+
+
+
+<!-- Formulaire de commande -->
+
+
+
+<form id="aDeliveryForm" class="row g-3 needs-validation mx-5 p-5" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" onsubmit="event.preventDefault(); validateDeliveryForm();">
+
+
 <div class="container-fluid d-flex" style="justify-content: center;">
   <div class="card mb-3 text-center no-hover" style="max-width: 540px; background-color: rgb(133, 118, 126);">
     <div class="row g-0">
@@ -33,12 +43,6 @@
   </div>
 </div>
 
-
-<!-- Formulaire de commande -->
-
-
-
-<form id="aDeliveryForm" class="row g-3 needs-validation mx-5 p-5" onsubmit="event.preventDefault(); validateDeliveryForm();">
 
   <div class="container">
     <div class="col-md-12">
@@ -72,6 +76,39 @@
 </form>
 
 
+
+
+
+
+<?php 
+
+if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
+
+
+  $jinx = $_POST['jinx'];
+  $contact = $_POST['contact'];
+  $phone = $_POST['phone'];
+  $adresse = $_POST['adresse'];
+  $nombre = $_POST['tentacles'];
+ 
+
+  $date = date ('Y-m-d-H-i-s');
+  $filename = $date  . '.txt' ;
+
+  $file = fopen($filename, 'a');
+  fwrite($file, "Prénom : $jinx\n");
+  fwrite($file, "E-mail : $contact\n");
+  fwrite($file, "Téléphone : $phone \n");
+  fwrite($file, "Adresse : $adresse \n");
+  fwrite($file, "Nombre d article : $nombre \n");
+ 
+  fclose($file);
+
+
+
+
+}
+ ?>
  
     <!-- Réseaux sociaux -->    
 

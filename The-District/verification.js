@@ -1,3 +1,32 @@
+
+
+/* bouton + et -  */
+
+
+const input = document.getElementById('tentacles-value');
+const display = document.getElementById('tentacles-display');
+const minusButton = document.getElementById('minus');
+const plusButton = document.getElementById('plus');
+
+minusButton.addEventListener('click', () => {
+  const currentValue = parseInt(input.value);
+  if (currentValue > 0) {
+    input.value = currentValue - 1;
+    display.value = input.value.padStart(2, '0');
+  }
+});
+
+plusButton.addEventListener('click', () => {
+  const currentValue = parseInt(input.value);
+  if (currentValue < 100) {
+    input.value = currentValue + 1;
+    display.value = input.value.padStart(2, '0');
+  }
+});
+
+
+
+
 // Fonction pour valider le formulaire de contact
 function validateContactForm() {
     // Récupération des éléments du formulaire
