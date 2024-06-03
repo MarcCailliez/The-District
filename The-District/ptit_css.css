@@ -250,7 +250,7 @@ object-fit: cover;
   width: 25%;
 }
 
-.nav-link .active {
-  
+.active {
+  font-weight: bold; 
   color: blue
 }

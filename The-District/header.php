@@ -15,9 +15,10 @@
     <div class="parallax">
 
     <!-- Enetete avec liens vers les autres pages -->
+    
      <header>
 
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
       <div class="container-fluid ">
         <img src="images_the_district/the_district_brand/logo_transparent.png" alt="logo" width="10%">
      
@@ -27,16 +28,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
-              <a class="nav-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/Acceuil.php") { echo "active"; }?>"  aria-current="page" href="Acceuil.php">Accueil</a>
+              <a class="nav-link  <?php if ($_SERVER['REQUEST_URI'] == "/The-District/The-District/Acceuil.php") { echo "active"; }?>"  aria-current="page" href="Acceuil.php">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/Catégories.php") { echo "active"; }?>" aria-current="page" href="Catégories.php">Catégories</a>
+              <a class="nav-link  <?php if ($_SERVER['REQUEST_URI'] == "/The-District/The-District/Cat%C3%A9gories.php") { echo "active"; }?>" aria-current="page" href="Catégories.php">Catégories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/Tous les plats.php") { echo "active"; }?>" href="Tous les plats.php">Tout les Plats</a>
+              <a class="nav-link  <?php if ($_SERVER['REQUEST_URI'] == "/The-District/The-District/Tous%20les%20plats.php") { echo "active"; }?>" href="Tous les plats.php">Tout les Plats</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/Contact.php") { echo "active"; }?>" href="Contact.php">Contact</a>
+              <a class="nav-link  <?php if ($_SERVER['REQUEST_URI'] == "/The-District/The-District/Contact.php") { echo "active"; }?>" href="Contact.php">Contact</a>
             </li>
             <li class="nav-item">
               <a href="commande.php">
