@@ -213,7 +213,7 @@ object-fit: cover;
 }
 
 #tentacles-display{
-  width: 10%;
+  width: 15%;
 }
 
 #couleurNavbar{
@@ -250,7 +250,3 @@ object-fit: cover;
   width: 25%;
 }
 
-.active {
-  font-weight: bold; 
-  color: blue
-}

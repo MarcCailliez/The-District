@@ -33,7 +33,7 @@
           <div class="input-group" id="commandeCentre">
             <label for="tentacles-value">Quantité : &nbsp;</label>
             <button class="btn btn-secondary btn-sm" id="minus" type="button">-</button>
-            <input type="text" id="tentacles-display" value="00" min="0" max="100" readonly />
+            <input type="text" style="" id="tentacles-display" value="00" min="0" max="100" readonly />
             <button class="btn btn-secondary btn-sm" id="plus" type="button">+</button>
             <input type="hidden" id="tentacles-value" name="tentacles" min="0" max="100" value="0" />
           </div>

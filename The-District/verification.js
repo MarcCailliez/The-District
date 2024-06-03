@@ -84,8 +84,17 @@ function validateContactForm() {
   
     // Si aucune erreur, soumettre le formulaire
     if (!prenomError && !nomError && !emailError && !telephoneError && !questionError) {
-      alert("Votre formulaire a bien été envoyé !");
-      document.getElementById("contactForm").submit();
+      Swal.fire({
+        title: "Votre formulairea bien été envoyé !",
+        text: "Pour annulé cliquer sur le bouton 'OK', sinon attendez",
+        icon: "success"
+      });
+      setTimeout(function () {
+
+        document.getElementById("contactForm").submit();
+      
+      }, 2.5 * 1000);
+     
     }
   }
   
@@ -136,7 +145,16 @@ function validateContactForm() {
   
     // Si aucune erreur, soumettre le formulaire
     if (!jinxError && !contactError && !phoneError && !adresseError) {
-      alert("Votre formulaire a bien été envoyé !");
-      document.getElementById("aDeliveryForm").submit();
+      Swal.fire({
+        title: "Votre commande a bien été envoyé !",
+        text: "Pour annulé cliquer sur le bouton 'OK', sinon attendez",
+        icon: "success"
+      });
+      setTimeout(function () {
+
+        document.getElementById("aDeliveryForm").submit();
+      
+      }, 2.5 * 1000);
+     
     }
   }

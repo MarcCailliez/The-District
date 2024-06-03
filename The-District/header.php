@@ -15,7 +15,7 @@
     <div class="parallax">
 
     <!-- Enetete avec liens vers les autres pages -->
-    
+
      <header>
 
      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
@@ -49,7 +49,7 @@
       </div>
     </nav>
  
- <?php echo "<script> console.log('".$_SERVER['REQUEST_URI']."')</script>"; ?>
+
 
     
 
@@ -63,15 +63,21 @@
 
 <div class="container-fluid g-0 " id="video1">
      <div class="card no-hover" id="videoBordure">
-  <video class="embed-responsive-item" autoplay muted loop id="videoTaille">
+  <video class="embed-responsive-item " autoplay muted loop id="videoTaille">
       <source src="images_the_district/intérieur resto.mp4" type="video/mp4">
   </video>
-  <div class="card-img-overlay no-hover d-flex align-items-center justify-content-center">
+  <?php if ($_SERVER['REQUEST_URI']!= "/The-District/The-District/commande.php") 
+  if ($_SERVER['REQUEST_URI']!= "/The-District/The-District/Contact.php"){?>
+  <div class="card-img-overlay no-hover d-flex align-items-center justify-content-center ">
       <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search" id="rechercheBarre">
   </div>
+  <?php }?>
 </div>
 </div>
+
+
 
 
   </header>
 
+  
