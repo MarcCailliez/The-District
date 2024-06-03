@@ -19,8 +19,8 @@
 <form id="aDeliveryForm" class="row g-3 needs-validation mx-5 p-5" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" onsubmit="event.preventDefault(); validateDeliveryForm();">
 
 
-<div class="container-fluid d-flex" style="justify-content: center;">
-  <div class="card mb-3 text-center no-hover" style="max-width: 540px; background-color: rgb(133, 118, 126);">
+<div class="container-fluid d-flex" id="commandeCentre">
+  <div class="card mb-3 text-center no-hover" id="commandeCouleur">
     <div class="row g-0">
       <div class="col-md-4">
         <img src="images_the_district/image-perso-1.jpeg" class="img-fluid rounded-5 border border-secondary" alt="...">
@@ -30,10 +30,10 @@
           <h5 class="card-title">Plats commandé</h5>
           <p class="card-text">Description du plat commandé.</p>
 
-          <div class="input-group" style="justify-content: center;">
+          <div class="input-group" id="commandeCentre">
             <label for="tentacles-value">Quantité : &nbsp;</label>
             <button class="btn btn-secondary btn-sm" id="minus" type="button">-</button>
-            <input type="text" style="width: 10%;" id="tentacles-display" value="00" min="0" max="100" readonly />
+            <input type="text" id="tentacles-display" value="00" min="0" max="100" readonly />
             <button class="btn btn-secondary btn-sm" id="plus" type="button">+</button>
             <input type="hidden" id="tentacles-value" name="tentacles" min="0" max="100" value="0" />
           </div>

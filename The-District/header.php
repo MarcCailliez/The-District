@@ -17,33 +17,38 @@
     <!-- Enetete avec liens vers les autres pages -->
      <header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid ">
         <img src="images_the_district/the_district_brand/logo_transparent.png" alt="logo" width="10%">
-        <a class="navbar-brand text-white " href="Acceuil.php">Accueil</a>
+     
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="Catégories.php">Catégories</a>
+          <li class="nav-item">
+              <a class="nav-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/Acceuil.php") { echo "active"; }?>"  aria-current="page" href="Acceuil.php">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="Tous les plats.php">Tout les Plats</a>
+              <a class="nav-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/Catégories.php") { echo "active"; }?>" aria-current="page" href="Catégories.php">Catégories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="Contact.php">Contact</a>
+              <a class="nav-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/Tous les plats.php") { echo "active"; }?>" href="Tous les plats.php">Tout les Plats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/Contact.php") { echo "active"; }?>" href="Contact.php">Contact</a>
             </li>
             <li class="nav-item">
               <a href="commande.php">
-                <img  src="images_the_district/basket2.svg" class="rounded-pill  p-1 " style=" background-color: white;width: 35px;height: 35px;display: flex;align-items: center;justify-content: center;">
+                <img  src="images_the_district/basket2.svg" class="rounded-pill  p-1 " id="couleurNavbar">
               </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+ 
+ <?php echo "<script> console.log('".$_SERVER['REQUEST_URI']."')</script>"; ?>
 
     
 
@@ -55,13 +60,13 @@
     
 
 
-<div class="container-fluid g-0 " style="width: 100%;">
-     <div class="card no-hover" style="border-color:black;">
-  <video class="embed-responsive-item" autoplay muted loop style="width: 100%; height: 300px; margin: 0 auto; object-fit: fill;">
+<div class="container-fluid g-0 " id="video1">
+     <div class="card no-hover" id="videoBordure">
+  <video class="embed-responsive-item" autoplay muted loop id="videoTaille">
       <source src="images_the_district/intérieur resto.mp4" type="video/mp4">
   </video>
   <div class="card-img-overlay no-hover d-flex align-items-center justify-content-center">
-      <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search" style="width: 25%;">
+      <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search" id="rechercheBarre">
   </div>
 </div>
 </div>
