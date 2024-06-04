@@ -1,16 +1,16 @@
 <?php include 'header.php'?>
     <br>
 
-    <!-- <div class="bg-color">   -->
+ 
     
-    
+     <!-- différents plats de la catégorie -->
 
     <div class="container ">
       <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-4 ">
         <div class="d-flex justify-content-center ">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/susho_paratger.jpeg" class="card-img-top  rounded-top-5 border border-secondary img-fluid" alt="Maxi Burger" id="acceuil1">
+              <img src="images_the_district/food/susho_paratger.jpeg" class="card-img-top  rounded-top-5 border border-secondary img-fluid" alt="assortiment de sushis" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <div class="card-text ">
                 <h5 class="card-title text-dark">Sushis</h5>
@@ -24,7 +24,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/ramen.jpeg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/ramen.jpeg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="ramen" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Ramen</h5>
                 <p class="card-text text-dark"> Vous hésitez entre une soupe et un plat consitant ? Voici les deux réuni ! </p>
@@ -36,7 +36,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/takoyaki.jpeg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/takoyaki.jpeg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="takoyaki" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Takoyaki</h5>
                 <p class="card-text text-dark">Les véritables boulettes de poulpe préparé par notre chef qui ravira vos papilles !</p>
@@ -48,7 +48,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/gyoza.jpeg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/gyoza.jpeg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="gyoza" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Gyoza</h5>
                 <p class="card-text text-dark">Au poulet , au crevette, au porc ou aux légumes, il y en a pour tout les goût même s'ils seront tout simplement excellents  </p>
@@ -68,7 +68,7 @@
   
      
 
-    <!-- Exemple de plats / plats les plus popuplaires -->
+    <!-- page suivante et précédente-->
 
 
 

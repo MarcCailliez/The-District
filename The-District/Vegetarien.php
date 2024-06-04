@@ -5,7 +5,7 @@
 
     
     
-    <!-- Catégories -->
+    <!-- différents plats de la catégorie -->
 
 
     <div class="container">
@@ -13,7 +13,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/spaghetti-legumes.jpg" class="card-img-top  rounded-top-5 border border-secondary img-fluid" alt="Maxi Burger" id="acceuil1">
+              <img src="images_the_district/food/spaghetti-legumes.jpg" class="card-img-top  rounded-top-5 border border-secondary img-fluid" alt="Pasta de la Casa" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <div class="card-text ">
                 <h5 class="card-title text-dark">Pasta de la Casa</h5>
@@ -27,7 +27,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/courgettes_farcies.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/courgettes_farcies.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="courgettes farcies" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Courgettes Farcies</h5>
                 <p class="card-text text-dark">De belles courgettes farcies aux multiples plaisir du monde végétal. Ce sont de vraie courgettes surprises !</p>
@@ -39,7 +39,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/Food-Name-8298.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/Food-Name-8298.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="pizza véfétarienne" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Pizza Végétraienne</h5>
                 <p class="card-text text-dark">Qui a dit que les végétarien n'avait pas le droit à une pizza ? Certainement pas nous !</p>
@@ -51,7 +51,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/cesar_salad.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/cesar_salad.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="salade césar" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Salade César</h5>
                 <p class="card-text text-dark">Une véritable salade césar mais végétarienne grâce à notre steack de soja grillé à la flamme !</p>
@@ -71,7 +71,7 @@
   
      
 
-    <!-- Exemple de plats / plats les plus popuplaires -->
+    <!-- page suivante et précédente -->
 
 <br>
 <div id="boutonGauche">

@@ -27,7 +27,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="Pizza.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/category/pizza_cat.jpg" class="card-img-top  rounded-top-5 border border-secondary img-fluid img-margin1" alt="Burger" id="acceuil1">
+              <img src="images_the_district/category/pizza_cat.jpg" class="card-img-top  rounded-top-5 border border-secondary img-fluid img-margin1" alt="pizza" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-white">Pizza</h5>
               </div>
@@ -37,7 +37,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="pasta.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/pate.jpeg" class="card-img-top  rounded-top-5 border border-secondary img-fluid img-margin1" alt="Burger" id="acceuil1">
+              <img src="images_the_district/pate.jpeg" class="card-img-top  rounded-top-5 border border-secondary img-fluid img-margin1" alt="pasta" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-white">Pasta</h5>
               </div>
@@ -47,7 +47,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="Vegetarien.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/category/veggie_cat.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid img-margin1" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/category/veggie_cat.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid img-margin1" alt="végétarien" id="acceuil1">
               <div class="card-body rounded-bottom-5" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-white">Végétarien</h5>
               </div>
@@ -57,7 +57,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="plats_du_nord.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/welsh.jpeg" class="card-img-top  rounded-top-5 border border-secondary img-fluid img-margin1" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/welsh.jpeg" class="card-img-top  rounded-top-5 border border-secondary img-fluid img-margin1" alt="plats du nord" id="acceuil1">
               <div class="card-body rounded-bottom-5" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-white">Plats du Nord</h5>
               </div>
@@ -67,7 +67,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="Asian_Food.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/category/asian_food_cat.jpg" class="card-img-top  rounded-top-5 border border-secondary img-fluid img-margin1" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/category/asian_food_cat.jpg" class="card-img-top  rounded-top-5 border border-secondary img-fluid img-margin1" alt="asian food" id="acceuil1">
               <div class="card-body rounded-bottom-5" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-white">Asian Food</h5>
               </div>
@@ -94,7 +94,7 @@
         <div class="d-none d-lg-block ">
           <div class="card rounded-5 border-0 " id="Acceuil2"> 
             <a href="Burger.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/image-perso-1.jpeg" class="card-img-top  rounded-circle img-fluid img-margin2" alt="Burger" id="acceuil1">
+              <img src="images_the_district/image-perso-1.jpeg" class="card-img-top  rounded-circle img-fluid img-margin2" alt=" maxi Burger" id="acceuil1">
               <div class="card-body rounded-bottom-5" id="couleurAcceuil2">
                 <h5 class="card-title text-center text-white">Maxi Burger</h5>
               </div>
@@ -104,9 +104,9 @@
         <div class="d-none d-lg-block">
           <div class="card rounded-5 border-0" id="Acceuil2">
             <a href="Pizza.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/pizza-salmon.png" class="card-img-top  rounded-circle border border-secondary img-fluid img-margin2" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/pizza-salmon.png" class="card-img-top  rounded-circle border border-secondary img-fluid img-margin2" alt="Pizza Norvégienne" id="acceuil1">
               <div class="card-body rounded-bottom-5" id="couleurAcceuil2">
-                <h5 class="card-title text-center text-white">Pizza Saumon</h5>
+                <h5 class="card-title text-center text-white">Pizza Norvégienne</h5>
               </div>
             </a>
           </div>
@@ -114,7 +114,7 @@
         <div class="d-none d-lg-block">
           <div class="card rounded-5 border-0" id="Acceuil2">
             <a href="plats_du_nord.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/welsh.jpeg" class="card-img-top  rounded-circle border border-secondary img-fluid img-margin2" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/welsh.jpeg" class="card-img-top  rounded-circle border border-secondary img-fluid img-margin2" alt="welsh" id="acceuil1">
               <div class="card-body rounded-bottom-5" id="couleurAcceuil2">
                 <h5 class="card-title text-center text-white">Welsh</h5>
               </div>

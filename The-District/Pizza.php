@@ -6,7 +6,7 @@
 
     
     
-    <!-- Catégories -->
+    <!-- différents plats de la catégorie -->
 
 
     <div class="container">
@@ -14,7 +14,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/pizza.jpg" class="card-img-top  rounded-top-5 border border-secondary img-fluid" alt="Maxi Burger" id="acceuil1">
+              <img src="images_the_district/pizza.jpg" class="card-img-top  rounded-top-5 border border-secondary img-fluid" alt=" Hawaïenne Chicken Bacon Groovy" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <div class="card-text ">
                 <h5 class="card-title text-dark">Hawaïenne Chicken Bacon Groovy</h5>
@@ -28,7 +28,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/pizza-salmon.png" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/pizza-salmon.png" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="Pizza Norvégienne" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Pizza Norvégienne</h5>
                 <p class="card-text text-dark">Laclassique est indétronable fameuse pizza saumon et sa base crème ! Simple mais rudement efficace !</p>
@@ -40,7 +40,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/pizza-margherita.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/pizza-margherita.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="Marguerita" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Marguerita</h5>
                 <p class="card-text text-dark">Y a t il vraiment besoin de présenté la mère de toute les pizzas ?</p>
@@ -52,7 +52,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/menu-pizza.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/menu-pizza.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="La Cannibale" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">La Cannibale</h5>
                 <p class="card-text text-dark">Pour les viandards voici une pizza avec de la viande , de la viande , de la viande et on a mit quelque feuille de basilic dessus pour faire genre.</p>
@@ -72,7 +72,7 @@
   
      
 
-    <!-- Exemple de plats / plats les plus popuplaires -->
+    <!-- page suivante et précédente -->
 
 <br>
 <div id="boutonGauche">

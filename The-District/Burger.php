@@ -4,7 +4,7 @@
 
     <!-- <div class="bg-color"> -->
     
-    <!-- Catégories -->
+    <!-- différents plats de la catégorie -->
 
     <div class="container">
       <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-4">
@@ -25,7 +25,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/burger.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/burger.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="Cheese Burger" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Cheese Burger</h5>
                 <p class="card-text text-dark">Le classique du cheese burger qui ravira petits et grands.</p>
@@ -37,7 +37,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/image-perso-2.jpeg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/image-perso-2.jpeg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="Smash Burger" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Smash Burger</h5>
                 <p class="card-text text-dark">Le Smash Burger ! Après avoir conqui les papilles de tant de monde , peut-on encore douter de lui ?</p>
@@ -49,7 +49,7 @@
         <div class="d-flex justify-content-center">
           <div class="card rounded-5 border border-secondary" id="tailleAcceuil1">
             <a href="commande.php" class="link-underline link-underline-opacity-0">
-              <img src="images_the_district/food/hamburger.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="fdgd" id="acceuil1">
+              <img src="images_the_district/food/hamburger.jpg" class="card-img-top rounded-top-5 border border-secondary img-fluid" alt="Hamburger" id="acceuil1">
               <div class="card-body rounded-bottom-5 border border-secondary" id="couleurAcceuil1">
                 <h5 class="card-title text-center text-dark">Hamburger</h5>
                 <p class="card-text text-dark">Le plus simple des Hamburgers ? Il pourrait vous surprendre bien plus que vous ne le pensez !</p>
@@ -69,7 +69,7 @@
   
      
 
-    <!-- Exemple de plats / plats les plus popuplaires -->
+    <!-- page suivante et précédente-->
 <br>
 
 
